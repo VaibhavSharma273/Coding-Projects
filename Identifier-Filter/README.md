@@ -1,9 +1,9 @@
-# Cxref -- A filter for identifiers in a C program
+# Cxref - A filter for identifiers in a C program
 
 "Cxref" is a filter that reads a C program from the standard input and
 writes to the standard output a line of the form:
 
-      ` <C-identifier>:<line-number>`
+`<C-identifier>:<line-number>`
 
 for each instance of each C identifier that appears.  The order of the lines
 should is the same as the order in which the identifiers appear in the input.
