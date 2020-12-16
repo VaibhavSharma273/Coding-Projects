@@ -6,9 +6,8 @@ Qsort is a sort program that reads lines from the files specifie, removes their 
 
 `Qsort [-POS[,LEN]] [FILE]*`
  
-The sorted order is based on a "key" associated with each line.  Normally, this key is the entire line, but if the -POS[,LEN] option is specified, it consists
-of the substring of length LEN beginning with line[POS].  If line[POS] lies beyond the end of line, the key is the empty string.  If there are fewer than LEN
-characters starting with line[POS], the key consists of only those characters.
+The sorted order is based on a "key" associated with each line.  Normally, this key is the entire line, but if the -POS[,LEN] option is specified, it consists of the substring of length LEN beginning with line[POS].  If line[POS] lies beyond the end of line, the key is the empty string.  If there are fewer than LEN characters starting with line[POS], the key consists of only those characters.
+
 For example,
 
         LINE            POS,[LEN]       KEY
@@ -18,13 +17,9 @@ For example,
         abcdefgh        6,3             gh
         abcdefgh        8,2
         
-Qsort is STABLE.  That is, if two lines have equal keys, they appear in the same relative order in the output as they did in the input. To make the assignment more
-challenging, Qsort does not use any arrays other than argv[] and the strings returned by getline().  Instead, it is limited to ONE queue and TWO stacks of
-string pointers; that is, no more than one queue and two stacks may exist at any point during its execution.
+Qsort is STABLE.  That is, if two lines have equal keys, they appear in the same relative order in the output as they did in the input. To make the assignment more challenging, Qsort does not use any arrays other than argv[] and the strings returned by getline().  Instead, it is limited to ONE queue and TWO stacks of string pointers; that is, no more than one queue and two stacks may exist at any point during its execution.
 
-Rather than implement two separate data structures, one for queues and one for stacks, Qsort uses three deques (\*), one used only as a queue (i.e., items can
-only be added to the tail and removed from the head), the other two used only as stacks (i.e., items can only be added to the head and removed from the
-head). If the same deque is used as both a queue and a stack (i.e., items are added to both the tail and the head), then it counts as one of each.
+Rather than implement two separate data structures, one for queues and one for stacks, Qsort uses three deques (\*), one used only as a queue (i.e., items can only be added to the tail and removed from the head), the other two used only as stacks (i.e., items can only be added to the head and removed from the head). If the same deque is used as both a queue and a stack (i.e., items are added to both the tail and the head), then it counts as one of each.
 
   *(\*) A deque (or double-ended queue, pronounced "deck") is a data structure that combines the attributes of a queue and a stack:  Items can be added to the tail (as in a queue) or the head (as in a stack), but can only be removed from the head.*
 
