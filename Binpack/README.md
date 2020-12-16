@@ -1,4 +1,4 @@
-### Binpack - An implementation of depth first search
+# Binpack - An implementation of depth first search
 Binpack is a program that prints the number of bins needed to storea set of items.  
 
 ## Usage
