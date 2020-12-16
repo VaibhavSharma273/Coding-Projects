@@ -5,65 +5,50 @@
 int CheckSplice (char);
 int main() 
 {
-	int n=1;
+    int n=1;
     int c;
     while ((c=getchar())!=EOF)
     {   
- 
     	int t=0;
     	int splice=0;
-
-    	if (isalpha(c)||c=='_'||(c=='&'&&(isalpha(c=getchar())||c=='_')))
-    	{   
-    	
-    		int x=1;
-    		if (c!='&')
-    		{
+    	if (isalpha(c)||c=='_'||(c=='&'&&(isalpha(c=getchar())||c=='_'))) {   
+    		int x = 1;
+    		if (c!='&'){
     			t=1;
     			putchar(c);
-
     		}
-    		else
-    		{
-    			while (c=='&')
-    				c=getchar();
-    			
+    		else{
+    			while (c=='&'){
+				c=getchar();
+			}
     		}
 
        
     		while ((c=getchar())!=' ' && c!=EOF && c!='\n')
     		{ 
-    			
     			if (isalnum(c)||c=='_')
     				{
-
     					t=1;
     					putchar(c);
     					x++;
     				}
     			
     			else if (c==')'||c=='(')
-    			{
-  					
-  					break;
+    			{	
+  				break;
     			}
 
            		else if (c=='\\')
            		{
-           			
-           			if ((c=getchar())=='\n')
-           			{
-
+           			if ((c=getchar())=='\n') {
            				splice++;
            				continue;
            			}
-           			else
-           				{
-                    ungetchar(c);
-                    break;
-                  }
+           			else {
+                    			ungetchar(c);
+                    			break;
+                 		}
            		}
-    		
     			else if (c=='+'||c=='-'||c=='='||c==';'||c=='?'||c==','||c=='*'||c=='/'||c=='<'||c=='>'||c=='%'||c=='!'||c=='&'||c=='|'||c=='!'||c=='$'||c=='.'||'['||']')
     			{
     		    		break;
@@ -110,7 +95,6 @@ int main()
          		}
 
              }
-
 
          }
 
