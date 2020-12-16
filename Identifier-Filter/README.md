@@ -19,3 +19,36 @@ In particular, Cxref:
 * assumes that there are no multicharacter char constants
 * not make ANY assumptions as to the maximum length of a line;
 
+## Usage
+On command-line, run:
+```
+$ make
+$ ./Cxref <input>
+```
+
+## Example
+For the input:
+```
+main()
+  {
+      int a, b = 1, c = 0xface;
+      one ( "( /* %s )",  ( "*/" ) );
+      two ( /* " is a quote character */ " */ )");
+      three ("\",", ",0);  ",0);
+      four ('"', ('"'));
+      a = b //* Hello! */ c ;
+      -c;
+  }
+```
+the output should be:
+```
+ main:1
+  int:3
+  a:3
+  b:3
+  c:3
+  one:4
+  two:5
+  three:6
+  four:7
+```
