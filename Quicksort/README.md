@@ -24,12 +24,9 @@ string pointers; that is, no more than one queue and two stacks may exist at any
 
 Rather than implement two separate data structures, one for queues and one for stacks, Qsort uses three deques (\*), one used only as a queue (i.e., items can
 only be added to the tail and removed from the head), the other two used only as stacks (i.e., items can only be added to the head and removed from the
-head).  If the same deque is used as both a queue and a stack (i.e., items are added to both the tail and the head), then it counts as one of each.
+head). If the same deque is used as both a queue and a stack (i.e., items are added to both the tail and the head), then it counts as one of each.
 
-  *(\*) A deque (or double-ended queue, pronounced "deck") is a data structure
-  that combines the attributes of a queue and a stack:  Items can be added to
-  the tail (as in a queue) or the head (as in a stack), but can only be removed
-  from the head. *
+  *(\*) A deque (or double-ended queue, pronounced "deck") is a data structure that combines the attributes of a queue and a stack:  Items can be added to the tail (as in a queue) or the head (as in a stack), but can only be removed from the head.*
 
 These deques are implemented in a separate source file as the abstract data type (ADT) Deque defined in the header file Deque.h.  
 
