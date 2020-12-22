@@ -58,5 +58,5 @@ $ ./getProgs
 
 This will create a separate directory called testCases to store some of the winning programs. To run IDFilter on all of them, run:
 ```
-$  ./sampleAttempts.txt testCases ./IDFilter` 
+$  ./sampleAttempts.txt testCases ./IDFilter
 ```
