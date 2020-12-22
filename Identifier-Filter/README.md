@@ -1,6 +1,6 @@
-# Cxref - A filter for identifiers in a C program
+# IDFilter - A filter for identifiers in a C program
 
-"Cxref" is a filter that reads a C program from the standard input and
+"IDFilter" is a filter that reads a C program from the standard input and
 writes to the standard output a line of the form:
 
 `<C-identifier>:<line-number>`
@@ -8,7 +8,7 @@ writes to the standard output a line of the form:
 for each instance of each C identifier that appears.  The order of the lines
 should is the same as the order in which the identifiers appear in the input.
 
-In particular, Cxref:
+In particular, IDFilter:
 * handles line splices correctly
 * treats keywords as identifiers
 * handles both /*...*/ and //... comments correctly
@@ -23,7 +23,7 @@ In particular, Cxref:
 On command-line, run:
 ```
 $ make
-$ ./Cxref <input>
+$ ./IDFilter <input>
 ```
 
 ## Example
