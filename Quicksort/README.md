@@ -26,7 +26,7 @@ Rather than implement two separate data structures, one for queues and one for s
 
   *(\*) A deque (or double-ended queue, pronounced "deck") is a data structure that combines the attributes of a queue and a stack:  Items can be added to the tail (as in a queue) or the head (as in a stack), but can only be removed from the head.*
 
-These deques are implemented in a separate source file as the abstract data type (ADT) Deque defined in the header file Deque.h.  
+These deques are implemented in a separate source file as the abstract data type (ADT) Deque defined in the header file Deque.h, an alternate version of the header file for the Deque ADT provided by Prof. Stanley Eisenstat. 
 
 The implementation of Linesort runs in O(n\*log2(n)) time under the usual randomness assumptions. Additionally, to make the implementation efficient, Linesort uses at most 2*#compares + N calls to addD() or pushD() (i.e. the commands used to add elements to the deques).     
 
