@@ -5,8 +5,7 @@ writes to the standard output a line of the form:
 
 `<C-identifier>:<line-number>`
 
-for each instance of each C identifier that appears.  The order of the lines
-should is the same as the order in which the identifiers appear in the input.
+for each instance of each C identifier that appears.  The order of the lines is the same as the order in which the identifiers appear in the input.
 
 In particular, IDFilter:
 * handles line splices correctly
