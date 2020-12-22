@@ -30,3 +30,4 @@ These deques are implemented in a separate source file as the abstract data type
 
 The implementation of Linesort runs in O(n\*log2(n)) time under the usual randomness assumptions. Additionally, to make the implementation efficient, Linesort uses at most 2*#compares + N calls to addD() or pushD() (i.e. the commands used to add elements to the deques).     
 
+*Initial Specification Created By Prof. Stanley Eistenstat*
