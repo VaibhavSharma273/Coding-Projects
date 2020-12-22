@@ -3,6 +3,7 @@
 #include <ctype.h>
 #define ungetchar(c) ungetc(c,stdin)
 int CheckSplice (char);
+
 int main() 
 {
 	int n=1;
@@ -209,7 +210,6 @@ int main()
        }     
 return 0;
 }
-
 
 int CheckSplice(char x)
 {
