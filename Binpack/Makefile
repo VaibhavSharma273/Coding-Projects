@@ -5,6 +5,3 @@ Binfdump: Bindump.o
 	$(CC)   $(CFLAGS) -o Bindump Bindump.o
 Binfdump.o:  
 	$(CC)   $(CFLAGS) -c Bindump.c 
-	
-#Name: Vaibhav Sharma
-#NetID: vs432
