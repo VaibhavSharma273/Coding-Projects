@@ -1,5 +1,3 @@
-//Name : Vaibhav Sharma
-//NetID : vs273
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
