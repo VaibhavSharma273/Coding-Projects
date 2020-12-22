@@ -51,7 +51,7 @@ the output should be:
   three:6
   four:7
 ```
-This program can be tested with the winning programs of  International Obfuscated C Code Contest (IOCCC), a computer programming contest for the most creatively obfuscated C code. To download some of the winning programs run the getprogs.txt file written by Lucas Jehu Silva Shepard:
+This program can be tested with the winning programs of  International Obfuscated C Code Contest (IOCCC), a computer programming contest for the most creatively obfuscated C code. To download some of the winning programs run the getProgs.txt file written by Lucas Jehu Silva Shepard:
 ```
 $ ./getProgs
 ```
