@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "/c/cs223/Hwk4/Deque.h"
+#include "Deque.h"
 #include "Hash.h"
 #include <limits.h>
 #include <ctype.h>
