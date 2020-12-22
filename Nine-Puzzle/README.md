@@ -1,4 +1,4 @@
-# Nine Puzzle - An implementation of the nine puzzle using breadth-first search and hash tables
+# Nine Puzzle - An implementation of the game using breadth-first search and hash tables
 
 The Nine Puzzle is a square 3x3 tray in which are placed 8 square 1x1 tiles numbered from 1 to 8.  The remaining space is empty, so an adjacent tile can slide into that space, leaving its former location empty. Nine20 solves a nine puzzle given an INITIAL position (say 236158-47) and a GOAL position (say 12345678-).
 
