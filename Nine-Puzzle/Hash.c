@@ -4,9 +4,6 @@
 #include "Hash.h"
 #include <stdio.h>
 
-//Name : Vaibhav Sharma
-//NetID : vs432
-
 //Implementation : Each struct of type Table consists of its size, the number of elements and an array of structs of type Chains
 //				   Each steuct of type Chains consists of its size (all initialised to zero at the beginning) and a pointer to an array of structs of type Triple;
 //				   Each triple consists of a key (pos), value1(from), and value2 (nsteps) 
@@ -49,9 +46,7 @@ HTable InternalCreate (int size) {
 		T->table[i]->RealChain = 0;
 		T->table[i]->ChainSize = 0;
 	}
- 
 	return T;
-
 }
 
 //Function to create a table as per initial size; fresh table
@@ -152,7 +147,6 @@ void grow(HTable T) {
 	*T2 = swap;
 	free(T2);
 	T2 = NULL;
-	
 }
 
 long int SearchTable (HTable T, char* key, char** old) {
@@ -163,11 +157,9 @@ long int SearchTable (HTable T, char* key, char** old) {
 				*old = T->table[h]->RealChain[i]->from;
 				return T->table[h]->RealChain[i]->steps;
 			}
-		}
-		
+		}	
 	} 
 		return -10;
-
 }
 
 
