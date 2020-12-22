@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for file in $1/*.c ; do
+  echo "at $file"
+  diff <($2 < $file) <($3 < $file)
+
+done
