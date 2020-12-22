@@ -1,49 +1,16 @@
 CC=gcc
 CFLAGS= -std=c99 -pedantic -Wall -g3
 
-HWK4= /c/cs223/Hwk4
-
-all:    Qsort testDeque QsortH
-
-Deque.o:   $(HWK4)/Deque.h
+all: Linesort
 
 #####
-# Instructions to make example, which demonstrates the use of the Deque ADT
+# Instructions to make Linesort
 #####
 
-example: example.o Deque.o
+Linesort: Linesort.o Deque.o
 	${CC} ${CFLAGS} -o $@ $^
 
-example.o: $(HWK4)/Deque.h
-
-
-#####
-# Instructions to make Qsort
-#####
-
-Qsort: Qsort.o Deque.o
-	${CC} ${CFLAGS} -o $@ $^
-
-Qsort.o: $(HWK4)/Deque.h
-
-
-#####
-# Instructions to make testDeque
-#####
-
-testDeque: Deque.o $(HWK4)/testDeque.o
-	${CC} ${CFLAGS} -o $@ $^
-
-testDeque.o: $(HWK4)/Deque.h
-
-
-#####
-# Instructions to make QsortH
-#####
-
-QsortH: Qsort.o $(HWK4)/Deque.o
-	${CC} ${CFLAGS} -o $@ $^
-
+Linesort.o: Deque.h
 
 clean:
-	rm -f Qsort testDeque QsortH example *.o
+	rm -f Linesort *.o
