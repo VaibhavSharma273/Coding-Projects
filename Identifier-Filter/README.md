@@ -51,8 +51,12 @@ the output should be:
   three:6
   four:7
 ```
-This program can be tested with the winning programs of  International Obfuscated C Code Contest (IOCCC), a computer programming contest for the most creatively obfuscated C code. To download some of the winning programs run:
-`./getProgs`
+This program can be tested with the winning programs of  International Obfuscated C Code Contest (IOCCC), a computer programming contest for the most creatively obfuscated C code. To download some of the winning programs run the getprogs.txt file written by Lucas Jehu Silva Shepard:
+```
+$ ./getProgs
+```
 
 This will create a separate directory called testCases to store some of the winning programs. To run IDFilter on all of them, run:
-`./sampleAttempts.txt testCases ./IDFilter` 
+```
+$  ./sampleAttempts.txt testCases ./IDFilter` 
+```
