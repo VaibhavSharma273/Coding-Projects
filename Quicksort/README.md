@@ -1,4 +1,4 @@
-# Linesort - An implementation of quicksort
+# Linesort - An implementation of quick sort
 
 Linesort is a sort program that reads lines from the files specified, removes their trailing newlines if any, sorts them in ascending order using quick sort, and writes the sorted lines to the standard output, each followed by a newline. When more than one file is specified, all of the lines in all of the files are sorted into one output stream.  When no files are specified, nothing is written.
 
