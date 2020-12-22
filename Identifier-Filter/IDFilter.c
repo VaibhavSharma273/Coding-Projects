@@ -24,7 +24,6 @@ int main()
     			
     		}
 
-       
     		while ((c=getchar())!=' ' && c!=EOF && c!='\n') { 
     			if (isalnum(c)||c=='_') {
     					t=1;
