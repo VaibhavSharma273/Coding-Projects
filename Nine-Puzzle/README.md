@@ -29,3 +29,5 @@ If no such move sequence exists, then nothing is printed; e.g.,
 (since there is no sequence of moves from 12345678- to 12345687-.
 
 The label on each tile can be any single printing character other than -, which denotes the empty square, but the labels may not be unique. 
+
+*Initial Specification Created By Prof. Stanley Eistenstat*
