@@ -50,4 +50,4 @@ With the -c flag all (and only) the non-Boggle words in the dictionary are print
 
 Note:  The real Boggle also requires that letters/wildcards on the board cannot be used more than once to form a word.  This behavior is invoked by the -t
 
-*Intial Specification Created By Prof. Stanley Eistenstat*
+*Initial Specification Created By Prof. Stanley Eistenstat*
