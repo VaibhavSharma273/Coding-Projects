@@ -1,7 +1,3 @@
-
-//Name: Vaibhav Sharma
-//NetID: vs432
-
 //Structure for hash table data structure
 typedef struct htable *HTable;
 
