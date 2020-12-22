@@ -60,3 +60,4 @@ This will create a separate directory called testCases to store some of the winn
 ```
 $  ./sampleAttempts.txt testCases ./IDFilter
 ```
+*Initial Specification Created By Prof. Stanley Eistenstat*
