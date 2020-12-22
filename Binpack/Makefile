@@ -1,10 +1,10 @@
 CC=gcc 
 CFLAGS= -g3  -std=c99  -pedantic -Wall
 
-Binfpack: Binpack.o 
-	$(CC)   $(CFLAGS) -o Binpack Binpack.o
-Binfpack.o:  
-	$(CC)   $(CFLAGS) -c Binpack.c 
+Binfdump: Bindump.o 
+	$(CC)   $(CFLAGS) -o Bindump Bindump.o
+Binfdump.o:  
+	$(CC)   $(CFLAGS) -c Bindump.c 
 	
 #Name: Vaibhav Sharma
 #NetID: vs432
