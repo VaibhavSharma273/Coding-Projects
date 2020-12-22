@@ -1,8 +1,8 @@
 CC=gcc 
 CFLAGS= -g3  -std=c99  -pedantic -Wall
 
-Cxfref: Cxref.o 
-	$(CC)   $(CFLAGS) -o Cxref Cxref.o
-Cxfref.o:  
-	$(CC)   $(CFLAGS) -c Cxref.c 
+IDFilter: IDFilter.o 
+	$(CC)   $(CFLAGS) -o IDFilter IDFilter.o
+IDFilter.o:  
+	$(CC)   $(CFLAGS) -c IDFilter.c 
 
